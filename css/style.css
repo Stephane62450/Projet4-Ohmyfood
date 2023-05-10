@@ -1,6 +1,7 @@
 body {
     margin: 0px;
     font-family: "Roboto", sans-serif;
+    background-color: #F7F7F7;
 }
 
 header {
@@ -8,22 +9,22 @@ header {
     font-size: 10px;
     text-align: center;
     font-style: italic;
+    background-color: #FFFFFF;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
-
+                                        /* LOGO */
 header .logo {
     width: 162px;
     height: 44px;
     margin-top: 14px;
     margin-bottom: 5px;
 }
-
+                                        /* LOCATION */
 .location {
     display: flex;
     height: 50px;
     justify-content: center;
     align-items: center;
-    padding: 0px;
     gap: 17px;
     color: #353535;
     background-color: #EAEAEA;
@@ -32,4 +33,25 @@ header .logo {
 .location h2 {
     font-size: 16px;
     font-weight: 500;
+}
+                                        /* EXPLORER */
+.explorer {
+    text-align: center;
+}
+
+.explorer h2 {
+    margin-top: 39px;
+    margin-bottom: 0;
+    padding-left: 42px;
+    padding-right: 58px;
+}
+
+.explorer p {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0 0 27px;
+}
+
+.explorer .button {
+    margin-top: 27px;
 }
