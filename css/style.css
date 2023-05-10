@@ -1,7 +1,35 @@
-header {
-    font-size: 30px;
-    font-style: italic;
-    text-align: center;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+body {
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+}
 
+header {
+    position: relative;
+    font-size: 10px;
+    text-align: center;
+    font-style: italic;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+header .logo {
+    width: 162px;
+    height: 44px;
+    margin-top: 14px;
+    margin-bottom: 5px;
+}
+
+.location {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 17px;
+    color: #353535;
+    background-color: #EAEAEA;
+}
+
+.location h2 {
+    font-size: 16px;
+    font-weight: 500;
 }
