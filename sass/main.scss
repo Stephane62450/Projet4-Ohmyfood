@@ -18,7 +18,7 @@ header {
     font-size: 10px;
     text-align: center;
     font-style: italic;
-    background-color: #FFFFFF;
+    background-color: #fff;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 /****** LOGO ******/
@@ -31,7 +31,7 @@ header .logo {
 
 /****** LOCATION ******/
 
-.location {
+.emplacement {
     display: flex;
     height: 50px;
     justify-content: center;
@@ -41,7 +41,7 @@ header .logo {
     background-color: #EAEAEA;
 }
 
-.location h2 {
+.emplacement h2 {
     font-size: 16px;
     font-weight: 500;
 }
@@ -53,20 +53,20 @@ header .logo {
     align-items: center;
     text-align: center;
     padding-bottom: 57px;
-}
 
-.explorer h2 {
+    &__h2 {
     margin-top: 39px;
     margin-bottom: 0;
     padding-left: 42px;
     padding-right: 58px;
+    }
 }
-
 .explorer p {
     font-size: 18px;
     font-weight: 300;
     margin: 0 0 27px;
-}
+    }
+
 
 .btn {
     display: flex;
