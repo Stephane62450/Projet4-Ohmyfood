@@ -1,14 +1,18 @@
 /****** GENERAL******/
+$couleur-primaire: #9356DC;
+$couleur-secondaire: #FF79DA;
+$couleur-tertiaire: #99E2D0;
+$background-emplacement: #EAEAEA;
+$background-explorer: #F7F7F7;
+$btn-linear-gradient: linear-gradient(to top, $couleur-primaire 0%, $couleur-secondaire 100%);
+$btn-linear-gradient-clair: linear-gradient(to top,#be9aea 0%, #ffafe9 100%);
 
-:root {
-    $couleur-primaire: #9356DC;
-    $couleur-secondaire: #FF79DA;
-    $couleur-tertiaire: #99E2D0;
-}
+
 body {
     margin: 0px;
     font-family: "roboto", sans-serif;
     background-color: #F7F7F7;
+    box-sizing: border-box;
 }
 
 /****** HEADER******/
@@ -17,7 +21,6 @@ header {
     position: relative;
     font-size: 10px;
     text-align: center;
-    font-style: italic;
     background-color: #fff;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
@@ -70,20 +73,21 @@ header .logo {
 
 .btn {
     display: flex;
+    width: 218px;
+    height: 50px;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    font-family: "Roboto";
-    width: 218px;
-    height: 50px;
-    color: white;
+    color: #fff;
+    font-weight: 500;
+    background: $btn-linear-gradient;
     border-radius: 25px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
 }
 
 .btn :hover {
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35)
+    background: $btn-linear-gradient-clair;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 }
 
 /****** FONCTIONNEMENT ******/
