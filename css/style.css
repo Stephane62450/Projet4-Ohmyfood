@@ -22,7 +22,7 @@ header .logo {
 }
 
 /****** LOCATION ******/
-.emplacement {
+.location {
   display: flex;
   height: 50px;
   justify-content: center;
@@ -32,7 +32,7 @@ header .logo {
   background-color: #EAEAEA;
 }
 
-.emplacement h2 {
+.location h2 {
   font-size: 16px;
   font-weight: 500;
 }
@@ -76,18 +76,17 @@ header .logo {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 }
 
-/****** FONCTIONNEMENT ******/
-.fonctionnement {
+/****** FUNCTIONING ******/
+.functioning {
   background: white;
   padding: 48px 20px 68px;
 }
-.fonctionnement h2 {
+.functioning h2 {
   padding-left: 20px;
 }
-
-li {
+.functioning li {
   display: flex;
-  height: 72.38px;
+  height: 72px;
   background-color: #f7f7f7;
   margin: 0 20px 23px 0;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
@@ -95,14 +94,14 @@ li {
   align-items: center;
   justify-content: space-evenly;
 }
-li i {
+.functioning li i {
   color: #7E7E7E;
 }
-li i:hover {
+.functioning li i:hover {
   color: #9356DC;
 }
 
-.nombre {
+.number {
   display: flex;
   position: absolute;
   width: 24px;
