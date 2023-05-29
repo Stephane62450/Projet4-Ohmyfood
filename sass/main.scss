@@ -1,12 +1,6 @@
-/****** GENERAL******/
-$couleur-primaire: #9356DC;
-$couleur-secondaire: #FF79DA;
-$couleur-tertiaire: #99E2D0;
-$background-emplacement: #EAEAEA;
-$background-explorer: #F7F7F7;
-$btn-linear-gradient: linear-gradient(to top, $couleur-primaire 0%, $couleur-secondaire 100%);
-$btn-linear-gradient-clair: linear-gradient(to top,#be9aea 0%, #ffafe9 100%);
+@import "./variables.scss";
 
+/****** GENERAL******/
 
 body {
     margin: 0px;
@@ -23,13 +17,12 @@ header {
     text-align: center;
     background-color: #fff;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-}
-/****** LOGO ******/
-header .logo {
-    width: 162px;
-    height: 44px;
-    margin-top: 14px;
-    margin-bottom: 5px;
+    .logo {
+        width: 162px;
+        height: 44px;
+        margin-top: 14px;
+        margin-bottom: 5px;
+    }
 }
 
 /****** LOCATION ******/
@@ -41,7 +34,7 @@ header .logo {
     align-items: center;
     gap: 17px;
     color: #353535;
-    background-color: #EAEAEA;
+    background-color: $background-emplacement;
 }
 
 .emplacement h2 {
@@ -56,20 +49,19 @@ header .logo {
     align-items: center;
     text-align: center;
     padding-bottom: 57px;
-
-    &__h2 {
-    margin-top: 39px;
-    margin-bottom: 0;
-    padding-left: 42px;
-    padding-right: 58px;
+    h2  {
+        margin-top: 39px;
+        margin-bottom: 0;
+        padding-left: 42px;
+        padding-right: 58px;
     }
 }
+   
 .explorer p {
     font-size: 18px;
     font-weight: 300;
     margin: 0 0 27px;
-    }
-
+}
 
 .btn {
     display: flex;
@@ -83,25 +75,24 @@ header .logo {
     background: $btn-linear-gradient;
     border-radius: 25px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    &:hover {
+        background: $btn-linear-gradient-clair;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+    }
 }
 
-.btn :hover {
-    background: $btn-linear-gradient-clair;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
-}
 
 /****** FONCTIONNEMENT ******/
 
 .fonctionnement {
     background: white;
     padding: 48px 20px 68px;
+    h2 {
+        padding-left: 20px;
+    }
 }
 
-.fonctionnement h2 {
-    padding-left: 20px;
-}
-
-.choix li {
+li {
     display: flex;
     height: 72.38px;
     background-color: #f7f7f7;
@@ -110,4 +101,23 @@ header .logo {
     border-radius: 20px;
     align-items: center;
     justify-content: space-evenly;
+    i {
+        color: #7E7E7E;
+        &:hover {
+            color: $couleur-primaire;
+        }
+    }
+}
+
+.nombre {
+    display: flex;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: $couleur-primaire;
+    color: #fff;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    left: 48px;
 }

@@ -14,8 +14,6 @@ header {
   background-color: #fff;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
-
-/****** LOGO ******/
 header .logo {
   width: 162px;
   height: 44px;
@@ -47,7 +45,7 @@ header .logo {
   text-align: center;
   padding-bottom: 57px;
 }
-.explorer__h2 {
+.explorer h2 {
   margin-top: 39px;
   margin-bottom: 0;
   padding-left: 42px;
@@ -73,8 +71,7 @@ header .logo {
   border-radius: 25px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
-
-.btn :hover {
+.btn:hover {
   background: linear-gradient(to top, #be9aea 0%, #ffafe9 100%);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 }
@@ -84,12 +81,11 @@ header .logo {
   background: white;
   padding: 48px 20px 68px;
 }
-
 .fonctionnement h2 {
   padding-left: 20px;
 }
 
-.choix li {
+li {
   display: flex;
   height: 72.38px;
   background-color: #f7f7f7;
@@ -98,6 +94,25 @@ header .logo {
   border-radius: 20px;
   align-items: center;
   justify-content: space-evenly;
+}
+li i {
+  color: #7E7E7E;
+}
+li i:hover {
+  color: #9356DC;
+}
+
+.nombre {
+  display: flex;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: #9356DC;
+  color: #fff;
+  border-radius: 25px;
+  justify-content: center;
+  align-items: center;
+  left: 48px;
 }
 
 /*# sourceMappingURL=style.css.map */
