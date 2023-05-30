@@ -79,16 +79,16 @@ header .logo {
 /****** FUNCTIONING ******/
 .functioning {
   background: white;
-  padding: 48px 20px 68px;
+  padding: 48px 20px 45px;
 }
-.functioning h2 {
-  padding-left: 20px;
+.functioning ol {
+  padding: 0;
 }
 .functioning li {
   display: flex;
   height: 72px;
   background-color: #f7f7f7;
-  margin: 0 20px 23px 0;
+  margin: 0 20px 23px 13px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
   align-items: center;
@@ -100,8 +100,7 @@ header .logo {
 .functioning li i:hover {
   color: #9356DC;
 }
-
-.number {
+.functioning .number {
   display: flex;
   position: absolute;
   width: 24px;
@@ -111,7 +110,79 @@ header .logo {
   border-radius: 25px;
   justify-content: center;
   align-items: center;
-  left: 48px;
+  left: 21px;
+}
+
+/******RESTAURANTS******/
+.restaurants h2 {
+  margin-top: 54px;
+  margin-left: 20px;
+}
+
+.restaurants-cards {
+  padding: 0 18px 66px;
+}
+.restaurants-cards .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.restaurants-cards .cards .card {
+  position: relative;
+  width: auto;
+  height: 251px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+.restaurants-cards .cards .card img {
+  width: 100%;
+  height: 66%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+}
+.card-text .card-title {
+  font-size: 18px;
+  line-height: 20px;
+  margin: 0;
+  padding: 16px 0 5px 13px;
+}
+
+.card-subtitle {
+  left: 3.82%;
+  right: 23.53%;
+  top: 85.66%;
+  bottom: 4.78%;
+  font-size: 17px;
+  font-weight: 300;
+  padding: 0 0 12px 13px;
+  margin: 0;
+}
+
+.new {
+  display: flex;
+  background: #99E2D0;
+  width: 80px;
+  height: 29px;
+  color: #008766;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 2px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  right: 20px;
+  top: calc(14% - 14.5px);
 }
 
 /*# sourceMappingURL=style.css.map */
