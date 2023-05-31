@@ -75,9 +75,11 @@ header {
     background: $btn-linear-gradient;
     border-radius: 25px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s;
     &:hover {
         background: $btn-linear-gradient-clair;
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+        transform: scale(1.05);
     }
 }
 
@@ -166,19 +168,25 @@ a {
         margin: 0;
         padding: 16px 0 5px 13px;
     }
+    .card-subtitle {
+        left: 3.82%;
+        right: 23.53%;
+        top: 85.66%;
+        bottom: 4.78%;
+        font-size: 17px;
+        font-weight: 300;
+        padding: 0 0 12px 13px;
+        margin: 0;
+    }
 }
 
-.card-subtitle {
-    left: 3.82%;
-    right: 23.53%;
-    top: 85.66%;
-    bottom: 4.78%;
-    font-size: 17px;
-    font-weight: 300;
-    padding: 0 0 12px 13px;
-    margin: 0;
+.heart {
+    position: absolute;
+    right: 25px;
+    bottom: 40px;
+    width: 22px;
+    height: 22px;
 }
-
 .new {
     display: flex;
     background: $tertiary-color;
@@ -195,3 +203,41 @@ a {
     right: 20px;
     top: calc(14% - 29px/2);
 }
+
+/******FOOTER******/
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #353535;
+    h4 {
+        font-family: "Shrikhand";
+        font-size: 18px;
+        font-weight: 400;
+        font-style: italic;
+        color: #fff;
+        padding: 22px 25px;
+        margin: 0;
+        
+    }
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    color: #fff;
+    padding: 0 22px;
+    gap: 7px;
+    margin: 0;
+    i {
+        width: 11px;
+    }
+    span {
+        margin: 11px;
+    }
+    a {
+        color: #fff;
+    }
+
+ }
