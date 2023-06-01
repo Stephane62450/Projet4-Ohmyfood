@@ -91,23 +91,24 @@ header {
     padding: 48px 20px 45px;
     ol {
         padding: 0;
-    }
-    li {
-        display: flex;
-        height: 72px;
-        background-color: #f7f7f7;
-        margin: 0 20px 23px 13px;
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-        border-radius: 20px;
-        align-items: center;
-        justify-content: space-evenly;
-        i {
-            color: #7E7E7E;
-            &:hover {
+        li {
+            display: flex;
+            height: 72px;
+            background-color: #f7f7f7;
+            margin: 0 20px 23px 13px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+            border-radius: 20px;
+            align-items: center;
+            justify-content: space-evenly;
+            i {
+                color: #7E7E7E;
+                &:hover {
                 color: $primary-color;
-            }
+                }
+            }   
         }
     }
+}
     .number {
         display: flex;
         position: absolute;
@@ -120,7 +121,7 @@ header {
         align-items: center;
         left: 21px;
     }
-}
+
 
 /******RESTAURANTS******/
 .restaurants {
@@ -168,16 +169,17 @@ a {
         margin: 0;
         padding: 16px 0 5px 13px;
     }
-    .card-subtitle {
-        left: 3.82%;
-        right: 23.53%;
-        top: 85.66%;
-        bottom: 4.78%;
-        font-size: 17px;
-        font-weight: 300;
-        padding: 0 0 12px 13px;
-        margin: 0;
-    }
+}
+
+.card-subtitle {
+    left: 3.82%;
+    right: 23.53%;
+    top: 85.66%;
+    bottom: 4.78%;
+    font-size: 17px;
+    font-weight: 300;
+    padding: 0 0 12px 13px;
+    margin: 0;
 }
 
 .heart {
@@ -227,7 +229,7 @@ ul {
     flex-direction: column;
     list-style-type: none;
     color: #fff;
-    padding: 0 22px;
+    padding: 0 22px 22px 22px;
     gap: 7px;
     margin: 0;
     i {
@@ -239,5 +241,4 @@ ul {
     a {
         color: #fff;
     }
-
  }
