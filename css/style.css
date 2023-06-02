@@ -1,3 +1,78 @@
+/******MENU DES RESTAURANTS******/
+.btn-return {
+  position: absolute;
+  left: 23px;
+  top: 24px;
+  color: #353535;
+}
+
+.image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.menu {
+  position: relative;
+  width: 100%;
+  margin-top: -60px;
+  background: #F7F7F7;
+  border-radius: 25px 25px 0 0;
+}
+
+.menu-title {
+  padding: 32px 17px 42px 17px;
+}
+.menu-title h2 {
+  width: 100%;
+  font-size: 28px;
+  font-family: "Shrikhand";
+  font-style: italic;
+  font-weight: 400;
+  margin: 0;
+}
+
+.menu-heart {
+  position: absolute;
+  right: 40px;
+  top: 45px;
+}
+
+.formule {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 13px 40px 13px;
+  gap: 40px;
+}
+.formule .entrees {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.formule .entrees h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 300;
+  border-bottom: 3px solid #99E2D0;
+  padding-bottom: 5px;
+  width: 40px;
+}
+
+.entrees .cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 12px;
+}
+.entrees .cards .card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
 /****** GENERAL******/
 body {
   margin: 0px;
