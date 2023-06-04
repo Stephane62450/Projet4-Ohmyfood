@@ -334,4 +334,64 @@ ul a {
   color: #fff;
 }
 
+/****** Media queries******/
+/****** Tablette******/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .explorer {
+    padding-bottom: 30px;
+  }
+  .explorer h2 {
+    margin: 30px 0 18px 0;
+    font-size: 30px;
+  }
+}
+/******Desktop******/
+@media screen and (min-width: 1024px) and (max-width: 2560px) {
+  .explorer {
+    padding-bottom: 30px;
+  }
+  .explorer h2 {
+    margin: 30px 0 18px 0;
+    font-size: 40px;
+  }
+  .functioning {
+    display: flex;
+    flex-direction: column;
+  }
+  .functioning .choice {
+    display: flex;
+    flex-direction: row;
+  }
+  .functioning .choice li {
+    width: 323px;
+  }
+  .functioning .choice li .number {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    left: -35px;
+  }
+  .restaurants-cards {
+    padding: 0 18px 30px;
+  }
+  .restaurants-cards .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 50px;
+    column-gap: 100px;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 30px 25px;
+  }
+  footer h4 {
+    position: absolute;
+    right: 20px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
