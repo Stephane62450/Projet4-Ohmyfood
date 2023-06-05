@@ -107,6 +107,12 @@ body {
   box-sizing: border-box;
 }
 
+.wrapper {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /****** HEADER******/
 header {
   position: relative;
@@ -337,12 +343,35 @@ ul a {
 /****** Media queries******/
 /****** Tablette******/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  .wrapper {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .explorer {
     padding-bottom: 30px;
   }
   .explorer h2 {
     margin: 30px 0 18px 0;
     font-size: 30px;
+  }
+  .functioning h2 {
+    margin-left: 20px;
+  }
+  .choice {
+    position: relative;
+    margin-left: 20px;
+  }
+  .choice .number {
+    left: 0px;
+  }
+  .restaurants-cards {
+    padding-bottom: 66px;
+  }
+  .restaurants-cards .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 66px;
   }
   footer {
     flex-direction: row;
@@ -353,7 +382,7 @@ ul a {
   }
 }
 /******Desktop******/
-@media screen and (min-width: 1024px) and (max-width: 2560px) {
+@media screen and (min-width: 1024px) {
   .explorer {
     padding-bottom: 30px;
   }
@@ -364,26 +393,21 @@ ul a {
   .functioning {
     display: flex;
     flex-direction: column;
-    padding: 0 180px;
+    padding: 0;
   }
   .functioning h2 {
     margin-left: 20px;
   }
-  .functioning h2 ol {
-    display: flex;
-    flex-direction: row;
-    margin-left: 20px;
-  }
-  .functioning h2 ol .choice {
+  .functioning .choice {
     display: flex;
     flex-direction: row;
     gap: 25px;
-  }
-  .functioning h2 ol .choice li {
-    width: 322px;
     margin-left: 20px;
   }
-  .functioning h2 ol .choice li .number {
+  .functioning .choice li {
+    width: 322px;
+  }
+  .functioning .choice li .number {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -391,13 +415,10 @@ ul a {
     align-items: center;
     left: -35px;
   }
-  .restaurants {
-    padding: 0 180px;
-  }
-  .restaurants .restaurants-cards {
+  .restaurants-cards {
     padding: 0 20px 30px;
   }
-  .restaurants .restaurants-cards .cards {
+  .restaurants-cards .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 50px;
