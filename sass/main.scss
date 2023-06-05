@@ -256,7 +256,13 @@ ul {
         }
     }
 
-
+    footer {
+        flex-direction: row;
+        align-items: baseline;
+        ul {
+            flex-direction: row;
+        }
+    }
 }
 
 
@@ -285,41 +291,54 @@ ul {
     .functioning {
         display: flex;
         flex-direction: column;
-        .choice{
-            display: flex;
-            flex-direction: row;
-            li {
-                width: 323px;
-                .number{
-                    position: relative;
+        padding: 0 180px;
+        h2 {
+            margin-left: 20px;
+            ol{
+                display: flex;
+                flex-direction: row;
+                margin-left: 20px;
+                .choice {
                     display: flex;
                     flex-direction: row;
-                    justify-content: center;
-                    align-items: center;
-                    left: -35px;
+                    gap: 25px;
+                    li {
+                        width: 322px;
+                        margin-left: 20px;
+                        .number{
+                            position: relative;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            left: -35px;
+                        }
+                    }
                 }
             }
         }
     }
 
-    .restaurants-cards {
-        padding: 0 18px 30px;
-        .cards {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            row-gap: 50px;
-            column-gap: 100px;
+    .restaurants {
+        padding: 0 180px;
+        .restaurants-cards {
+            padding: 0 20px 30px;
+            .cards {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                row-gap: 50px;
+                column-gap: 100px;
+            }
         }
     }
 
     footer {
         display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
         padding: 30px 25px;
-        h4 {
-            position: absolute;
-            right: 20px;
+        align-items: baseline;
+        flex-direction: row-reverse;
+        ul {
+            flex-direction: row;
         }
     }
 }

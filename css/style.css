@@ -344,6 +344,13 @@ ul a {
     margin: 30px 0 18px 0;
     font-size: 30px;
   }
+  footer {
+    flex-direction: row;
+    align-items: baseline;
+  }
+  footer ul {
+    flex-direction: row;
+  }
 }
 /******Desktop******/
 @media screen and (min-width: 1024px) and (max-width: 2560px) {
@@ -357,15 +364,26 @@ ul a {
   .functioning {
     display: flex;
     flex-direction: column;
+    padding: 0 180px;
   }
-  .functioning .choice {
+  .functioning h2 {
+    margin-left: 20px;
+  }
+  .functioning h2 ol {
     display: flex;
     flex-direction: row;
+    margin-left: 20px;
   }
-  .functioning .choice li {
-    width: 323px;
+  .functioning h2 ol .choice {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
   }
-  .functioning .choice li .number {
+  .functioning h2 ol .choice li {
+    width: 322px;
+    margin-left: 20px;
+  }
+  .functioning h2 ol .choice li .number {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -373,10 +391,13 @@ ul a {
     align-items: center;
     left: -35px;
   }
-  .restaurants-cards {
-    padding: 0 18px 30px;
+  .restaurants {
+    padding: 0 180px;
   }
-  .restaurants-cards .cards {
+  .restaurants .restaurants-cards {
+    padding: 0 20px 30px;
+  }
+  .restaurants .restaurants-cards .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 50px;
@@ -384,13 +405,12 @@ ul a {
   }
   footer {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
     padding: 30px 25px;
+    align-items: baseline;
+    flex-direction: row-reverse;
   }
-  footer h4 {
-    position: absolute;
-    right: 20px;
+  footer ul {
+    flex-direction: row;
   }
 }
 
