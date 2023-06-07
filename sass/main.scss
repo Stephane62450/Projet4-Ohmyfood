@@ -6,7 +6,6 @@
 body {
     margin: 0px;
     font-family: "roboto", sans-serif;
-    background-color: #F7F7F7;
     box-sizing: border-box;
 }
 
@@ -58,6 +57,7 @@ header {
     align-items: center;
     text-align: center;
     padding-bottom: 57px;
+    background: $background-explorer-restaurants;
 
     h2 {
         margin-top: 39px;
@@ -142,9 +142,10 @@ header {
 
 /******RESTAURANTS******/
 .restaurants {
+    background: $background-explorer-restaurants;
 
     h2 {
-        margin-top: 54px;
+        padding-top: 54px;
         margin-left: 20px;
     }
 }
