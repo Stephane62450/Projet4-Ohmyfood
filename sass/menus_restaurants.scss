@@ -1,103 +1,150 @@
  /******MENU DES RESTAURANTS******/
  .btn-return {
-    position: absolute;
-    left: 23px;
-    top: 24px;
-    color: #353535;
+     position: absolute;
+     left: 23px;
+     top: 24px;
+     color: #353535;
  }
 
-.image {
-    width: 100%;
-    height: 275px;
-    object-fit: cover;
+ .image {
+     width: 100%;
+     height: 275px;
+     object-fit: cover;
  }
 
-.menu {
-    position: relative;
-    width: 100%;
-    margin-top: -60px;
-    background: #F7F7F7;
-    border-radius: 25px 25px 0 0;
+ .menu {
+     position: relative;
+     width: 100%;
+     margin-top: -40px;
+     background: #F7F7F7;
+     border-radius: 25px 25px 0 0;
  }
 
-.menu-title {
-    padding: 32px 17px 42px 17px;
+ .menu-title {
+     padding: 32px 17px 42px 17px;
 
-    h2 {
-        width: 100%;
-        font-size: 28px;
-        font-family: "Shrikhand";
-        font-style: italic;
-        font-weight: 400;
-        margin: 0;
+     h2 {
+         width: 100%;
+         font-size: 28px;
+         font-family: "Shrikhand";
+         font-style: italic;
+         font-weight: 400;
+         margin: 0;
      }
-}
+ }
 
-.menu-heart {
-    position: absolute;
-    right: 40px;
-    top: 45px;
-}
+ .menu-heart {
+     position: absolute;
+     right: 40px;
+     top: 45px;
+ }
 
-.formule {
-    display: flex;
-    flex-direction: column;
-    padding: 0px 13px 40px 13px;
-    gap: 40px;    
-    
-    .formule-title {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        
-        h3 {
-            margin: 0;
-            font-size: 16px;
-            font-weight: 300;
-            border-bottom: 3px solid #99E2D0;
-            padding-bottom: 5px;
-            width: 40px;
-        }
+ .formule {
+     display: flex;
+     flex-direction: column;
+     padding: 0px 13px 40px 13px;
+     gap: 40px;
+
+     .formule-title {
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+
+         h3 {
+             margin: 0;
+             font-size: 16px;
+             font-weight: 300;
+             border-bottom: 3px solid #99E2D0;
+             padding-bottom: 5px;
+             width: 40px;
+         }
+     }
+ }
+
+ .menu-cards {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     gap: 12px;
+     padding-top: 12px;
+
+     .menu-card {
+         width: 100%;
+         height: 69px;
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         background: #fff;
+         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+         border-radius: 15px;
+
+         .card-content {
+             width: 100%;
+             display: flex;
+             flex-direction: column;
+             padding: 12px 16px 12px 15px;
+
+             .card-title {
+                 margin: 0;
+                 font-size: 18px;
+                 font-weight: 500;
+             }
+         }
+     }
+ }
+
+ .menu-card-text {
+     display: flex;
+     justify-content: space-between;
+     font-size: 15px;
+     font-weight: 300;
+ }
+
+ .price {
+     font-weight: 700;
+     color: #353535;
+ }
+
+ /****** Media queries ******/
+
+ /****** Tablette ******/
+ @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .image {
+        height: 300px;
     }
-}
 
-.menu-cards {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    padding-top: 12px;
-    .menu-card {
-        width: 100%;
-        height: 69px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        background: #fff;
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-        border-radius: 15px;
-        .card-content {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            padding: 12px 16px 12px 15px;
-            .card-title {
-                margin: 0;
-                font-size: 18px;
-                font-weight: 500;
-            }
-        }
+    .menu-title {
+        text-align: center;
     }
-}
 
-.menu-card-text {
-    display: flex;
-    justify-content: space-between;
-    font-size: 15px;
-    font-weight: 300;
-}
+    .menu-heart {
+        right: 140px;
+    }
 
-.price {
-    font-weight: 700;
-    color: #353535;
-}
+    .formule {
+        padding: 0px 80px 40px;
+    }
+ }
+
+ /****** Desktop ******/
+ @media screen and (min-width: 1024px) {
+     .image {
+         height: 383px;
+     }
+
+     .menu {
+         margin-top: -40px;
+     }
+
+     .menu-title {
+         text-align: center;
+     }
+
+     .menu-heart {
+         right: 300px;
+     }
+
+     .formule {
+         padding: 0px 210px 40px;
+     }
+ }

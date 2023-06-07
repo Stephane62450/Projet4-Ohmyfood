@@ -15,7 +15,7 @@
 .menu {
   position: relative;
   width: 100%;
-  margin-top: -60px;
+  margin-top: -40px;
   background: #F7F7F7;
   border-radius: 25px 25px 0 0;
 }
@@ -99,6 +99,40 @@
   color: #353535;
 }
 
+/****** Media queries ******/
+/****** Tablette ******/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .image {
+    height: 300px;
+  }
+  .menu-title {
+    text-align: center;
+  }
+  .menu-heart {
+    right: 140px;
+  }
+  .formule {
+    padding: 0px 80px 40px;
+  }
+}
+/****** Desktop ******/
+@media screen and (min-width: 1024px) {
+  .image {
+    height: 383px;
+  }
+  .menu {
+    margin-top: -40px;
+  }
+  .menu-title {
+    text-align: center;
+  }
+  .menu-heart {
+    right: 300px;
+  }
+  .formule {
+    padding: 0px 210px 40px;
+  }
+}
 /****** GENERAL******/
 body {
   margin: 0px;
@@ -343,8 +377,8 @@ ul a {
   color: #fff;
 }
 
-/****** Media queries******/
-/****** Tablette******/
+/****** Media queries ******/
+/****** Tablette ******/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .wrapper {
     max-width: 650px;
@@ -384,7 +418,7 @@ ul a {
     flex-direction: row;
   }
 }
-/******Desktop******/
+/****** Desktop ******/
 @media screen and (min-width: 1024px) {
   .explorer {
     padding-bottom: 30px;
