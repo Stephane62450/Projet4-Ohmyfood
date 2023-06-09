@@ -18,6 +18,10 @@
      margin-top: -40px;
      background: #F7F7F7;
      border-radius: 25px 25px 0 0;
+     .formule-title {
+        animation-duration: 3s;
+        animation-name: formule-title;
+     }
  }
 
  .menu-title {
@@ -105,25 +109,53 @@
      color: #353535;
  }
 
+ .check {
+     display: flex;
+     width: 59px;
+     height: 69px;
+     background: $tertiary-color;
+     border-radius: 0px 15px 15px 0px;
+     justify-content: center;
+     align-items: center;
+     margin-right: -60px;
+     transition: all 0.3s ease-out;
+     &:hover {
+        margin-right: 0;
+     }
+     
+
+     i {
+         display: flex;
+         width: 20px;
+         height: 20px;
+         justify-content: center;
+         align-items: center;
+         color: $tertiary-color;
+         background: #FFFFFF;
+         border-radius: 50%;
+     }
+ }
+
+
  /****** Media queries ******/
 
  /****** Tablette ******/
  @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .image {
-        height: 300px;
-    }
+     .image {
+         height: 300px;
+     }
 
-    .menu-title {
-        text-align: center;
-    }
+     .menu-title {
+         text-align: center;
+     }
 
-    .menu-heart {
-        right: 140px;
-    }
+     .menu-heart {
+         right: 140px;
+     }
 
-    .formule {
-        padding: 0px 80px 40px;
-    }
+     .formule {
+         padding: 0px 80px 40px;
+     }
  }
 
  /****** Desktop ******/
