@@ -77,6 +77,7 @@
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   overflow: hidden;
+  cursor: pointer;
 }
 .menu-cards .menu-card:hover .check {
   margin-right: 0;
@@ -163,6 +164,7 @@
     padding: 0px 210px 40px;
   }
 }
+/****** formule -title ******/
 @keyframes formule-title {
   from {
     transform: scaleY(0%);
@@ -175,6 +177,7 @@
     margin-top: 0%;
   }
 }
+/******* loader ******/
 @keyframes loader {
   100% {
     transform: translateY(-30px);
@@ -527,6 +530,11 @@ ul a {
 }
 /****** Desktop ******/
 @media screen and (min-width: 1024px) {
+  .wrapper {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .explorer {
     padding-bottom: 30px;
   }

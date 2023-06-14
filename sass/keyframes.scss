@@ -1,15 +1,20 @@
+/****** formule -title ******/
+
 @keyframes formule-title {
     from {
-    transform: scaleY(0%);
-    opacity: 0;
-    margin-top: 100%;
-}
+        transform: scaleY(0%);
+        opacity: 0;
+        margin-top: 100%;
+    }
+
     to {
-    transform: scaleY(100%);
-    opacity: 1;
-    margin-top: 0%;
+        transform: scaleY(100%);
+        opacity: 1;
+        margin-top: 0%;
     }
 }
+
+/******* loader ******/
 
 @keyframes loader {
     100% {
@@ -21,6 +26,7 @@
     from {
         transform: scale(1);
     }
+
     to {
         transform: scale(0);
     }

@@ -29,6 +29,7 @@ body {
     opacity: 0.9;
     overflow: hidden;
     animation: exit-loader 0.2s 3s ease forwards;
+
     .dot {
         width: 50px;
         height: 50px;
@@ -37,16 +38,18 @@ body {
         margin: 0 15px;
         animation: loader infinite 0.3s alternate;
     }
+
     .d2 {
         animation-delay: 0.05s;
     }
+
     .d3 {
         animation-delay: 0.1s;
     }
 }
 
-    /****** HEADER ******/
-    
+/****** HEADER ******/
+
 header {
     position: relative;
     font-size: 10px;
@@ -151,6 +154,7 @@ header {
                 &:hover {
                     color: $primary-color;
                 }
+
             }
         }
     }
@@ -385,6 +389,12 @@ ul {
 
 /****** Desktop ******/
 @media screen and (min-width: 1024px) {
+    .wrapper {
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .explorer {
         padding-bottom: 30px;
 
