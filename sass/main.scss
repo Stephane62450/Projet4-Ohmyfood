@@ -16,8 +16,37 @@ body {
     margin-right: auto;
 }
 
-/****** HEADER******/
+/****** LOADER ******/
+.loader {
+    position: fixed;
+    background: #f1f1f1;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+    overflow: hidden;
+    animation: exit-loader 0.2s 3s ease forwards;
+    .dot {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: linear-gradient($primary-color 0%, $secondary-color 100%);
+        margin: 0 15px;
+        animation: loader infinite 0.3s alternate;
+    }
+    .d2 {
+        animation-delay: 0.05s;
+    }
+    .d3 {
+        animation-delay: 0.1s;
+    }
+}
 
+    /****** HEADER ******/
+    
 header {
     position: relative;
     font-size: 10px;
@@ -182,6 +211,23 @@ a {
     color: black;
 }
 
+.new {
+    display: flex;
+    background: $tertiary-color;
+    width: 80px;
+    height: 29px;
+    color: #008766;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 2px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    right: 20px;
+    top: calc(14% - 29px/2);
+}
+
 .card-text {
     display: flex;
     flex-direction: column;
@@ -210,24 +256,36 @@ a {
     right: 25px;
     bottom: 40px;
     width: 22px;
-    height: 22px;
-}
+    height: 21px;
 
-.new {
-    display: flex;
-    background: $tertiary-color;
-    width: 80px;
-    height: 29px;
-    color: #008766;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    font-weight: 500;
-    border-radius: 2px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-    right: 20px;
-    top: calc(14% - 29px/2);
+    &:hover {
+        .heart-empty {
+            opacity: 0;
+        }
+
+        .heart-full {
+            opacity: 1;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-image: linear-gradient(0deg, $primary-color, $secondary-color);
+        }
+    }
+
+    .heart-empty {
+        position: absolute;
+        opacity: 1;
+        width: 22px;
+        height: 21px;
+    }
+
+    .heart-full {
+        position: absolute;
+        opacity: 0;
+        width: 22px;
+        height: 21px;
+        transition: all 2s;
+    }
 }
 
 /******FOOTER******/

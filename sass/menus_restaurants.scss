@@ -18,10 +18,6 @@
      margin-top: -40px;
      background: #F7F7F7;
      border-radius: 25px 25px 0 0;
-     .formule-title {
-        animation-duration: 3s;
-        animation-name: formule-title;
-     }
  }
 
  .menu-title {
@@ -53,6 +49,8 @@
          display: flex;
          flex-direction: column;
          align-items: flex-start;
+         animation-name: formule-title;
+         animation-duration: 3s;
 
          h3 {
              margin: 0;
@@ -81,6 +79,14 @@
          background: #fff;
          box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
          border-radius: 15px;
+         overflow: hidden;
+
+         &:hover {
+             .check {
+                 margin-right: 0;
+                 opacity: 1;
+             }
+         }
 
          .card-content {
              width: 100%;
@@ -99,9 +105,10 @@
 
  .menu-card-text {
      display: flex;
-     justify-content: space-between;
+     flex-direction: row;
      font-size: 15px;
      font-weight: 300;
+     justify-content: space-between;
  }
 
  .price {
@@ -119,10 +126,7 @@
      align-items: center;
      margin-right: -60px;
      transition: all 0.3s ease-out;
-     &:hover {
-        margin-right: 0;
-     }
-     
+
 
      i {
          display: flex;

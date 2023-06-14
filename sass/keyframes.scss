@@ -1,10 +1,27 @@
 @keyframes formule-title {
     from {
-    margin-top: 100%;
+    transform: scaleY(0%);
     opacity: 0;
+    margin-top: 100%;
 }
     to {
-    margin-top: 0%;
+    transform: scaleY(100%);
     opacity: 1;
+    margin-top: 0%;
+    }
+}
+
+@keyframes loader {
+    100% {
+        transform: translateY(-30px);
+    }
+}
+
+@keyframes exit-loader {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0);
     }
 }
