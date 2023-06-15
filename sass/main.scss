@@ -232,28 +232,31 @@ a {
     top: calc(14% - 29px/2);
 }
 
-.card-text {
+.card-content {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
 
-    .card-title {
-        font-size: 18px;
-        line-height: 20px;
-        margin: 0;
-        padding: 16px 0 5px 13px;
+    .card-text {
+        display: flex;
+        flex-direction: column;
+
+        .card-title {
+            font-size: 18px;
+            line-height: 20px;
+            margin: 0;
+            padding: 16px 0 5px 13px;
+
+        }
+
+        .card-subtitle {
+            font-size: 17px;
+            font-weight: 300;
+            padding: 0 0 12px 13px;
+            margin: 0;
+        }
     }
 }
 
-.card-subtitle {
-    left: 3.82%;
-    right: 23.53%;
-    top: 85.66%;
-    bottom: 4.78%;
-    font-size: 17px;
-    font-weight: 300;
-    padding: 0 0 12px 13px;
-    margin: 0;
-}
 
 .heart {
     position: absolute;
