@@ -22,6 +22,9 @@
 
  .menu-title {
      padding: 32px 17px 42px 17px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
 
      h2 {
          width: 100%;
@@ -34,9 +37,7 @@
  }
 
  .menu-heart {
-     position: absolute;
-     right: 40px;
-     top: 45px;
+     position: relative;
  }
 
  .formule {

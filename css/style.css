@@ -22,6 +22,9 @@
 
 .menu-title {
   padding: 32px 17px 42px 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .menu-title h2 {
   width: 100%;
@@ -33,9 +36,7 @@
 }
 
 .menu-heart {
-  position: absolute;
-  right: 40px;
-  top: 45px;
+  position: relative;
 }
 
 .formule {
@@ -432,6 +433,9 @@ a {
   bottom: 40px;
   width: 22px;
   height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .heart:hover .heart-empty {
   opacity: 0;
@@ -448,13 +452,19 @@ a {
   opacity: 1;
   width: 22px;
   height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .heart .heart-full {
   position: absolute;
   opacity: 0;
-  width: 22px;
-  height: 21px;
+  width: 30px;
+  height: 30px;
   transition: all 2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /******FOOTER******/
