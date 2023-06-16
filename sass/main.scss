@@ -259,9 +259,9 @@ a {
 
 
 .heart {
-    position: absolute;
+    position: relative;
     right: 25px;
-    bottom: 40px;
+    top: 25px;
     width: 22px;
     height: 21px;
     display: flex;
