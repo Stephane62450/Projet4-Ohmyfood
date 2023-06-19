@@ -1,6 +1,7 @@
 @import "./variables.scss";
 @import "./menus_restaurants.scss";
 @import "./keyframes.scss";
+@import "./mixins.scss";
 
 /****** GENERAL******/
 
@@ -18,14 +19,12 @@ body {
 
 /****** LOADER ******/
 .loader {
+    @include flex-center;
     position: fixed;
     background: #f1f1f1;
     z-index: 5;
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     opacity: 0.9;
     overflow: hidden;
     animation: exit-loader 0.2s 3s ease forwards;
@@ -68,10 +67,8 @@ header {
 /****** LOCATION ******/
 
 .location {
-    display: flex;
+    @include flex-center;
     height: 50px;
-    justify-content: center;
-    align-items: center;
     gap: 17px;
     color: #353535;
     background-color: $background-location;
@@ -107,12 +104,10 @@ header {
 }
 
 .btn {
-    display: flex;
+    @include flex-center;
     width: 218px;
     height: 50px;
     margin: auto;
-    justify-content: center;
-    align-items: center;
     text-decoration: none;
     color: #fff;
     font-weight: 500;
@@ -161,15 +156,13 @@ header {
 }
 
 .number {
-    display: flex;
+    @include flex-center;
     position: absolute;
     width: 24px;
     height: 24px;
     background: $primary-color;
     color: #fff;
     border-radius: 25px;
-    justify-content: center;
-    align-items: center;
     left: 21px;
 }
 
@@ -216,14 +209,12 @@ a {
 }
 
 .new {
-    display: flex;
+    @include flex-center;
     background: $tertiary-color;
     width: 80px;
     height: 29px;
     color: #008766;
     position: absolute;
-    align-items: center;
-    justify-content: center;
     font-size: 14px;
     font-weight: 500;
     border-radius: 2px;
@@ -259,14 +250,12 @@ a {
 
 
 .heart {
+    @include flex-center;
     position: relative;
     right: 25px;
     top: 25px;
     width: 22px;
     height: 21px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     &:hover {
         .heart-empty {
@@ -283,24 +272,20 @@ a {
     }
 
     .heart-empty {
+        @include flex-center;
         position: absolute;
         opacity: 1;
         width: 22px;
         height: 21px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 
     .heart-full {
+        @include flex-center;
         position: absolute;
         opacity: 0;
         width: 30px;
         height: 30px;
         transition: all 2s;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 }
 
@@ -435,11 +420,9 @@ ul {
                 width: 322px;
 
                 .number {
+                    @include flex-center;
                     position: relative;
-                    display: flex;
                     flex-direction: row;
-                    justify-content: center;
-                    align-items: center;
                     left: -35px;
                 }
             }

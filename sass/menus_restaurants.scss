@@ -1,3 +1,5 @@
+ @import "./mixins.scss";
+
  /******MENU DES RESTAURANTS******/
  .btn-return {
      position: absolute;
@@ -22,10 +24,8 @@
  }
 
  .menu-title {
+     @include flex-center;
      padding: 32px 17px 42px 17px;
-     display: flex;
-     align-items: center;
-     justify-content: center;
 
      h2 {
          width: 100%;
@@ -38,46 +38,41 @@
  }
 
  .menu-heart {
+     @include flex-center;
      position: relative;
-     display: flex;
-     align-items: center;
-     justify-content: center;
      width: 22px;
      height: 21px;
      right: 25px;
 
      &:hover {
-        .heart-empty {
-            opacity: 0;
-        }
-        .heart-full {
-            opacity: 1;
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-            background-image: linear-gradient(0deg, $primary-color, $secondary-color);
-        }
+         .heart-empty {
+             opacity: 0;
+         }
+
+         .heart-full {
+             opacity: 1;
+             background-clip: text;
+             -webkit-background-clip: text;
+             color: transparent;
+             background-image: linear-gradient(0deg, $primary-color, $secondary-color);
+         }
      }
 
      .heart-empty {
-        position: absolute;
-        opacity: 1;
-        width: 22px;
-        height: 21px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+         @include flex-center;
+         position: absolute;
+         opacity: 1;
+         width: 22px;
+         height: 21px;
      }
 
      .heart-full {
-        position: absolute;
-        opacity: 0;
-        width: 30px;
-        height: 30px;
-        transition: all 2s;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+         @include flex-center;
+         position: absolute;
+         opacity: 0;
+         width: 30px;
+         height: 30px;
+         transition: all 2s;
      }
  }
 
@@ -157,11 +152,13 @@
      font-size: 15px;
      font-weight: 300;
      justify-content: space-between;
+
      .text {
-        text-overflow: ellipsis;
-        overflow: hidden;
-        padding-right: 15px;
+         text-overflow: ellipsis;
+         overflow: hidden;
+         padding-right: 15px;
      }
+
      .price {
          font-weight: 700;
          color: #353535;
@@ -170,23 +167,19 @@
 
 
  .check {
-     display: flex;
+     @include flex-center;
      width: 59px;
      height: 69px;
      background: $tertiary-color;
      border-radius: 0px 15px 15px 0px;
-     justify-content: center;
-     align-items: center;
      margin-right: -60px;
      transition: all 0.3s ease-out;
 
 
      i {
-         display: flex;
+         @include flex-center;
          width: 20px;
          height: 20px;
-         justify-content: center;
-         align-items: center;
          color: $tertiary-color;
          background: #FFFFFF;
          border-radius: 50%;
