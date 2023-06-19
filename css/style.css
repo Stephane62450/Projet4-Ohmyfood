@@ -1,6 +1,7 @@
 /******MENU DES RESTAURANTS******/
 .btn-return {
   position: absolute;
+  font-size: initial;
   left: 23px;
   top: 24px;
   color: #353535;
